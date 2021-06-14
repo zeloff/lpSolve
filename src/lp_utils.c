@@ -5,7 +5,9 @@
 #include "lp_lib.h"
 #include "lp_utils.h"
 #include <time.h>
+#ifndef INTEGERTIME
 #include <sys/timeb.h>
+#endif
 
 #ifdef FORTIFY
 # include "lp_fortify.h"
